@@ -8,6 +8,7 @@ const bodyparser = require('body-parser');
 const orderController = require('./controllers/orderController');
 
 var app = express();
+var port_number = process.env.PORT || 5000;
 app.use(bodyparser.urlencoded({
     extended: true
 }));
@@ -22,7 +23,7 @@ app.engine('hbs',exphbs({
 
 }))
 app.set('view engine', 'hbs');
-app.listen(3000,()=>{
+app.listen(port_number,()=>{
     console.log('Escuchando el puerto 3000');
 });
 app.use('/',orderController);
