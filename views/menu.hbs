@@ -1,0 +1,116 @@
+<header>
+    <nav class="navbar fixed-top navbar-dark navbar-expand-md bg-success text-white" >
+
+    <a class='text-white navbar-brand' href="/" >
+        <i class="fab fa-pagelines"></i> Smart Store
+    </a>
+    <button class="nacbar-toggler colorci" type="button" data-toggle="collapse"
+    data-target = "#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+    aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse colorcito" id="navbarCollapse" class="colorcito">
+        <ul class="navbar-nav mr-auto menu" >
+            <li class="nav-item active">
+                <a href="#" class = "nav-link"> Home</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#fruit" class = "nav-link"> Laptops</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#juice" class = "nav-link">Tarjeta Grafica</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#salad" class = "nav-link"> Procesadores</a>
+            </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <a href="/cart" class="text-white nav-link" >
+                <i class="text-warning fas fa-shopping-cart" >
+                </i> Carrito de Compras  <i style="color:yellow"  id="cart_n"></i>
+            </a>
+
+            <a href="/admin" class="nav-link disabled text-white">
+                <i class="far fa-user"></i> Administrador
+            </a>
+
+        </form>
+    </div>
+
+</nav>
+</header>
+
+<main role="main">
+    <div class="carousel slide row " data-ride="carousel" id="myCarousel">
+        <ol class="carousel-indicators">
+            <li style="z-index: 102;" data-target="#myCarousel" data-slide-to="0" class="active"> </li>
+            <li style="z-index: 102;" data-target="#myCarousel" data-slide-to="1" > </li>
+            <li style="z-index: 102;" data-target="#myCarousel" data-slide-to="2" > </li>
+
+        </ol>
+        <div class="carousel-inner slide row justify-content-center">
+            <div class="carousel-item active" >
+                <video class="imgFilter first-slide"  src="img/carousel/slide1.mp4" autoplay loop alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Smart Store</h1>
+                        <p>Comprar nunca fue tan facil y devertido.</p>
+                        <p> <a href="#" role="butoon" class="btn btn-primary btn-lg">Products</a> </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item " >
+                <video class="imgFilter second-slide" src="img/carousel/slide2.mp4" autoplay loop alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <h1>Smart Store</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p> <a href="#" role="butoon" class="btn btn-primary btn-lg">Products</a> </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <video class="imgFilter third-slide" src="img/carousel/slide4.mp4" autoplay loop  alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1></h1>
+                        <p></p>
+                        <p> <a href="#" role="butoon" class="btn btn-primary btn-lg"></a> </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <a style="z-index: 101;" class="carousel-control-prev" role="button" data-slide="prev" href="#myCarousel">
+            <span class="carousel-control-prev-icon" aria-hidden = "true"></span>
+            <span class="sr-only">Previus</span>
+        </a>
+        <a style="z-index: 101;" class="carousel-control-next" role="button" data-slide="next" href="#myCarousel">
+            <span class="carousel-control-next-icon" aria-hidden = "true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
+    <div class="container marketing">
+        <br>
+        <h2 id="fruit">Laptops</h2>
+        <hr>
+        <div class="row" id="fruitDIV"></div>
+        <h2 id="juice">Tarjeta Grafica</h2>
+        <hr>
+        <div class="row" id="juiceDIV"></div>
+        <h2 id="salad">Procesadores</h2>
+        <hr>
+        <div class="row" id="saladDIV"></div>
+        <hr class="featurette-divider">
+
+    </div>
+    <div class="container marketing">
+        
+        <a href="https://api.whatsapp.com/send?phone=593959530874&text= Hola!%20Quiero%20contratar%20sus%20servicios,%20Mi%20ID%20de%20compra%20es:%20601a5d80f0b249537092e97e!"><input type=image src="img/contacto/img.jpg"  width="150" height="80"></a> 
+    </div>
+</main>
+<script src="/js/main.js"></script>

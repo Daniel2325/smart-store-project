@@ -1,0 +1,71 @@
+<header>
+    <nav class="navbar fixed-top navbar-dark navbar-expand-md bg-success text-white ">
+
+    <a class='text-white navbar-brand' href="/" >
+        <i class="fab fa-pagelines"></i> Smart Store
+        
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target = "#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+    aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse" >
+        <ul class="navbar-nav mr-auto menu" >
+            <li class="nav-item active">
+                <a href="/" class = "nav-link"> Home</a>
+
+            </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <a href="#" class="text-white nav-link" >
+                <i id="cart_n" class="text-warning fas fa-shopping-cart" >
+                </i> Carrito de Compras <i style="color:yellow"  id="cart_n"></i>
+            </a>
+
+            <a href="/admin" class="nav-link text-white">
+                <i class="far fa-user"></i> Administrador
+            </a>
+
+        </form>
+    </div>
+
+</nav>
+</header>
+<div class="container mt-3" >
+    <main role="main" >
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive-sm">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope ='col'>#</th>
+                                <th scope ='col'> <font color="white">Product</font> </th>
+                                <th scope ='col'><font color="white">Descripcion</font> </th>
+                                <th scope ='col'><font color="white">Cantidad</font> </th>
+                                <th scope ='col'><font color="white">Precio</font> </th>
+                            </tr>
+                        </thead>
+                        <tbody id="table">
+
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+
+            </div>
+            
+        </div>
+        <hr class="featurette-divider">
+    
+    <div class="container marketing">
+        
+        <a href="https://api.whatsapp.com/send?phone=593959530874&text= Hola!%20Quiero%20contratar%20sus%20servicios,%20Mi%20ID%20de%20compra%20es:%20601a5d80f0b249537092e97e!"><input type=image src="img/contacto/img.jpg"  width="150" height="80"></a> 
+    </div>
+
+    </main>
+</div>
+<script src="/js/cart.js"></script>         
