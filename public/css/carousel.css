@@ -5,7 +5,8 @@ body {
 }
 
 .heading{
-    color:blanchedalmond
+    color:rgb(12, 8, 1);
+    font-weight:bold;
 }
 .carousel{
     margin-bottom: 2rem;

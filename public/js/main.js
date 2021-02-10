@@ -14,19 +14,26 @@ var FRUIT = [
     {name:'Alienware',price:1340},
     {name:'Lenovo',price:1489},
     {name:'Asus',price:1354},
+    {name:'Acer',price:1479},
+    {name:'Acer',price:750},
+    {name:'Asus',price:1354},
     {name:'Acer',price:1479}
 ];
 
 var JUICE =[
-    {name: 'Nvidia 1660 ti',price:250},
-    {name: 'Nvidia RTX 2060',price:300},
-    {name: 'Nvidia RTX 3080',price:475}
+    {name: 'Nvidia 1660 ti',price:300},
+    {name: 'Nvidia RTX 2060',price:500},
+    {name: 'Nvidia RTX 3080',price:800},
+    {name: 'AMD Radeon RX 5700',price:450},
+    {name: 'Nvidia GTX 1050TI',price:290}
 ];
 
 var SALAD=[
     {name: 'Intel I9',price:500},
     {name: 'Amd Ryzen 7 3700X',price:490},
-    {name: 'Intel I7 10Gen',price:500}
+    {name: 'Intel I7 10Gen',price:500},
+    {name: 'Intel Core i5',price:160},
+    {name: 'Intel Core i3',price:100}
 ];
 
 function HTMLfruitProduct(con){
@@ -195,10 +202,10 @@ function cart2(name,price,url,con,btncart){
 
 
 (()=>{
-    for(let index=1;index<=6;index++){
+    for(let index=1;index<=9;index++){
         fruitDIV.innerHTML+=`${HTMLfruitProduct(index)}`;
     }
-    for(let index=1;index<=3; index++){
+    for(let index=1;index<=6; index++){
         juiceDIV.innerHTML+=`${HTMLjuiceProduct(index)}`;
         saladDIV.innerHTML+=`${HTMLsaladProduct(index)}`;
 
